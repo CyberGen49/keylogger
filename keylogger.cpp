@@ -96,7 +96,7 @@ Key keys[] = {
     // Mouse buttons
     Key{ VK_LBUTTON, "MouseLeft" }, Key{ VK_RBUTTON, "MouseRight" },
     Key{ VK_MBUTTON, "MouseMiddle" },
-    Key{ VK_XBUTTON1, "MouseForward" }, Key{ VK_XBUTTON2, "MouseBack" }
+    Key{ VK_XBUTTON1, "MouseBack" }, Key{ VK_XBUTTON2, "MouseForward" }
 };
 const int keyCount = sizeof(keys) / sizeof(keys[0]);
 
