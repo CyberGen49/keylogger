@@ -23,14 +23,6 @@ long getTimestamp() {
     return value.count();
 }
 
-void sleepUntil(int timestamp) {
-    int now = getTimestamp();
-    int diff = timestamp - now;
-    if (diff > 0) {
-        sleep(diff);
-    }
-}
-
 string boolToString(bool value) {
     return value ? "true" : "false";
 }
@@ -117,7 +109,7 @@ void logInitEvent() {
         }
     }
     printf(
-        "{ \"type\": \"InitEvent\", \"key_names\": [ %s ], \"key_count\": %d }\n",
+        "{ \"type\": \"InitEvent\", \"key_codes\": [ %s ], \"key_count\": %d }\n",
         keyNames.c_str(),
         keyCount
     );
