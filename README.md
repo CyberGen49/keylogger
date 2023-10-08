@@ -31,25 +31,4 @@ All output from the program is in JSON format, and each object has a `type` prop
 * number `y`: The current Y coordinate.
 
 ## Key codes
-```
-"KeyA", "KeyB", "KeyC", "KeyD", "KeyE", "KeyF", "KeyG",
-"KeyH", "KeyI", "KeyJ", "KeyK", "KeyL", "KeyM", "KeyN",
-"KeyO", "KeyP", "KeyQ", "KeyR", "KeyS", "KeyT", "KeyU",
-"KeyV", "KeyW", "KeyX", "KeyY", "KeyZ", "Key0", "Key1",
-"Key2", "Key3", "Key4", "Key5", "Key6", "Key7", "Key8",
-"Key9", "Semicolon", "Equal", "Comma", "Minus", "Period",
-"Slash", "Backtick", "BracketLeft", "Backslash", "BracketRight",
-"Quote", "KeyF1", "KeyF2", "KeyF3", "KeyF4", "KeyF5", "KeyF6",
-"KeyF7", "KeyF8", "KeyF9", "KeyF10", "KeyF11", "KeyF12",
-"Escape", "Tab", "CapsLock", "Space", "Enter", "Backspace",
-"Insert", "Delete", "Home", "End", "PageUp", "PageDown",
-"ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "PrintScreen",
-"ScrollLock", "Pause", "NumLock", "ContextMenu", "Win",
-"Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5",
-"Numpad6", "Numpad7", "Numpad8", "Numpad9", "NumpadMultiply",
-"NumpadAdd", "NumpadSubtract", "NumpadDecimal", "NumpadDivide",
-"VolumeMute", "VolumeDown", "VolumeUp", "MediaNext",
-"MediaPrevious", "MediaStop", "MediaPlayPause", "Shift",
-"Control", "Alt", "MouseLeft", "MouseRight", "MouseMiddle",
-"MouseForward", "MouseBack"
-```
+`KeyA`, `KeyB`, `KeyC`, `KeyD`, `KeyE`, `KeyF`, `KeyG`, `KeyH`, `KeyI`, `KeyJ`, `KeyK`, `KeyL`, `KeyM`, `KeyN`, `KeyO`, `KeyP`, `KeyQ`, `KeyR`, `KeyS`, `KeyT`, `KeyU`, `KeyV`, `KeyW`, `KeyX`, `KeyY`, `KeyZ`, `Key0`, `Key1`, `Key2`, `Key3`, `Key4`, `Key5`, `Key6`, `Key7`, `Key8`, `Key9`, `Semicolon`, `Equal`, `Comma`, `Minus`, `Period`, `Slash`, `Backtick`, `BracketLeft`, `Backslash`, `BracketRight`, `Quote`, `KeyF1`, `KeyF2`, `KeyF3`, `KeyF4`, `KeyF5`, `KeyF6`, `KeyF7`, `KeyF8`, `KeyF9`, `KeyF10`, `KeyF11`, `KeyF12`, `Escape`, `Tab`, `CapsLock`, `Space`, `Enter`, `Backspace`, `Insert`, `Delete`, `Home`, `End`, `PageUp`, `PageDown`, `ArrowLeft`, `ArrowRight`, `ArrowUp`, `ArrowDown`, `PrintScreen`, `ScrollLock`, `Pause`, `NumLock`, `ContextMenu`, `Win`, `Win`, `Numpad0`, `Numpad1`, `Numpad2`, `Numpad3`, `Numpad4`, `Numpad5`, `Numpad6`, `Numpad7`, `Numpad8`, `Numpad9`, `NumpadMultiply`, `NumpadAdd`, `NumpadSubtract`, `NumpadDecimal`, `NumpadDivide`, `VolumeMute`, `VolumeDown`, `VolumeUp`, `MediaNext`, `MediaPrevious`, `MediaStop`, `MediaPlayPause`, `Shift`, `Control`, `Alt`, `MouseLeft`, `MouseRight`, `MouseMiddle`, `MouseForward`, `MouseBack`
