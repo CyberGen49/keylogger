@@ -10,11 +10,17 @@ The idea is that this program can be run as a subprocess from another script and
 ## Outputs
 All output from the program is in JSON format, and each object has a `type` property that indicates the structure of the object.
 
+Note that polling is capped at 60Hz.
+
 ### Type `InitEvent`
+Fired once on startup.
+
 * string[] `key_codes`: An array of all registered key codes.
 * number `key_count`: The number of registered keys.
 
 ### Type `KeyEvent`
+Fired when the affected key changes state (pressed or released).
+
 * string `code`: The code for the affected key.
 * boolean `is_pressed`: `true` if the key is pressed, `false` otherwise.
 * number `raw_state`: The internal value representing the key's current state.
@@ -27,6 +33,8 @@ All output from the program is in JSON format, and each object has a `type` prop
     * number `y`: The current Y coordinate.
 
 ### Type `MouseMoveEvent`
+Fired when the cursor's coordinates change.
+
 * number `x`: The current X coordinate.
 * number `y`: The current Y coordinate.
 
