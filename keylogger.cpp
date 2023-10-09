@@ -27,6 +27,12 @@ string boolToString(bool value) {
     return value ? "true" : "false";
 }
 
+POINT getMouseCoords() {
+    POINT coords;
+    GetCursorPos(&coords);
+    return coords;
+}
+
 struct Key {
     int code;
     string name;
@@ -137,17 +143,17 @@ void logMouseMoveEvent(long x, long y) {
 }
 
 int main() {
-    long startTime = getTimestamp();
     logInitEvent();
-    long mouseX = 0;
-    long mouseY = 0;
+    long startTime = getTimestamp();
+    POINT initialCoords = getMouseCoords();
+    long mouseX = initialCoords.x;
+    long mouseY = initialCoords.y;
     while (true) {
         // Get updated mouse coordinates
-        POINT point;
-        GetCursorPos(&point);
-        bool hasCoordsChanged = point.x != mouseX || point.y != mouseY;
-        mouseX = point.x;
-        mouseY = point.y;
+        POINT coords = getMouseCoords();
+        bool hasCoordsChanged = coords.x != mouseX || coords.y != mouseY;
+        mouseX = coords.x;
+        mouseY = coords.y;
         // Log mouse movements
         if (hasCoordsChanged) {
             logMouseMoveEvent(mouseX, mouseY);
@@ -175,7 +181,6 @@ int main() {
                 logKeyEvent(key);
             }
         }
-        sleep(17); // Cap at 60Hz
     }
     return 0;
 }
