@@ -10,8 +10,6 @@ The idea is that this program can be run as a subprocess from another script and
 ## Outputs
 All output from the program is in JSON format, and each object has a `type` property that indicates the structure of the object.
 
-Note that polling is capped at 60Hz.
-
 ### Type `InitEvent`
 Fired once on startup.
 
